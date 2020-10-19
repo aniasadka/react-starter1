@@ -12,7 +12,7 @@ class Column extends React.Component {
     }
 }
 Column.propTypes = {
-    titleText: PropTypes.node
+    titleText: PropTypes.node.isRequired,
 };
 
 export default Column; 
