@@ -7,10 +7,10 @@ class App extends React.Component {
   render() {
     return (
       <main className={styles.component}>
-        <h1 className={styles.title}>My first React app</h1>
-        <h2 className={styles.subtitle}>Hello world!</h2>
-        <List title={['Things To Do', <sup key="1"></sup>]} image='http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'>
-         
+        <h1 className={styles.title}>What should I do today?</h1>
+        <h2 className={styles.subtitle}>Here is a list:</h2>
+        <List title={['Things to do ', <sup key='1'>soon!</sup>]} >
+        <p>I'm planning on doing all these things sooner, rather than later!</p>
         </List>
       </main>
     )
@@ -18,3 +18,8 @@ class App extends React.Component {
 }
 
 export default App;
+
+
+//<List title={['Things To Do', <sup key="1"></sup>]} image='http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'>
+         
+//</List>
