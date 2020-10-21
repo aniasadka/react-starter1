@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero.js';
 import styles from './List.scss';
 import PropTypes from 'prop-types';
 import Column from '../Column/Column.js';
+import {settings} from '../../data/dataStore';
 
 
 class List extends React.Component {
