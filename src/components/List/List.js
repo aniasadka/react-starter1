@@ -24,7 +24,7 @@ class List extends React.Component {
     <section className={styles.component}>
         <Hero titleText={this.props.title} image={this.props.image} />
         <div className={styles.description}>
-            {this.props.children}
+          {this.props.description}
         </div>
 
         <div className={styles.columns}>
