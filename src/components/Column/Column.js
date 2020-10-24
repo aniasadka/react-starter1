@@ -11,8 +11,8 @@ class Column extends React.Component {
         )
     }
 }
-Column.propTypes = {
-    titleText: PropTypes.node.isRequired,
-};
+    Column.propTypes = {
+        titleText: PropTypes.node.isRequired,
+    };
 
 export default Column; 

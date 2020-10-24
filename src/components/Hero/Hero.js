@@ -13,20 +13,10 @@ const Hero = props => (
 );
 
 Hero.propTypes = {
-  titleText: PropTypes.node.isRequired,
+  titleText: PropTypes.node,
   image: PropTypes.string,
 };
 
 
 export default Hero;
 
-/*dla komponentu funkcyjnego:
-import React from 'react';
-import styles from './MyComponent.scss';
-const MyComponent = () => (
-  <div>
-    <h3>Hello world!</h3>
-  </div>
-);
-export default MyComponent;
-*/

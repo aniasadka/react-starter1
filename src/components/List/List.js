@@ -34,9 +34,9 @@ class List extends React.Component {
         </div>
 
         <div className={styles.columns}>
-                <Column titleText={'Animals'} />
-                <Column titleText={'Plants'} />
-                <Column titleText={'Minerals'} />
+          {this.state.columns.map(({key, ...columnProps}) => (
+          <Column key={key} {...columnProps} />
+          ))}
             </div>	            
     </section>
     )
