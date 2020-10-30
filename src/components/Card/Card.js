@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Card.scss';
+import { settings} from '../data/dataStrore.js';
+import Icon from '../Icon/Icon.js';
+import Creator from '../Creator/Creator.js';
 
 class Card extends React.Component {
     state = {
