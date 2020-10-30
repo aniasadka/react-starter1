@@ -4,8 +4,8 @@ import styles from './Card.scss';
 
 class Card extends React.Component {
     state = {
-        cards: this.props.cards || [],
-      }
+      cards: this.props.cards || [],
+    }
 
       static propTypes = {
         title: PropTypes.node.isRequired,	    
@@ -26,37 +26,37 @@ class Card extends React.Component {
                 key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
                 title,
                 icon: 'list-alt',
-                cards: []
-              }
-            ]
+                cards: [],
+              },
+            ],
           }
         ));
       }
 
-render(){
-    return(
-    <section className={styles.component}>
-      <h3 className={styles.title}>
-          <span className={styles.icon}>
-            <Icon name={this.props.icon} />
-          </span>
-          {this.props.title}
-        </h3>
-        <div className={styles.cards}>
-          {this.state.cards.map(({key, ...cardProps}) => (
-            <Card key={key} {...cardProps} />
-          ))}
-        </div>
-        <div className={styles.creator}>
-          <Creator text={settings.cardCreatorText} action={title => this.addCard(title)} />
-        </div>
-    </section>
-    )
-  }
+      render(){
+        return(
+          <section className={styles.component}>
+            <h3 className={styles.title}>
+              <span className={styles.icon}>
+                <Icon name={this.props.icon} />
+              </span>
+              {this.props.title}
+            </h3>
+            <div className={styles.cards}>
+              {this.state.cards.map(({key, ...cardProps}) => (
+                <Card key={key} {...cardProps} />
+              ))}
+            </div>
+            <div className={styles.creator}>
+              <Creator text={settings.cardCreatorText} action={title => this.addCard(title)} />
+            </div>
+          </section>
+        );
+      }
 }
 
 Card.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default Card; 

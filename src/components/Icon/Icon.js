@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Icon = props => (<i className={`fas fa-${props.name}`}></i>);
 
 Icon.PropTypes = {
-    name: PropTypes.number,
+  name: PropTypes.string,
 };
 
 export default Icon;
