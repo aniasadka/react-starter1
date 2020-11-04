@@ -6,14 +6,14 @@ import {createActionAddColumn} from '../../redux/columnsRedux';
 //export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
 
 const mapStateToProps = (state, props) => ({
-    columns: getColumnsForList(state, props.id),
-  });
+  columns: getColumnsForList(state, props.id),
+});
 
-  const mapDispatchToProps = (dispatch, props) => ({
-    addColumn: title => dispatch(createActionAddColumn({
-      listId: props.id,
-      title,
-    })),
-  });
+const mapDispatchToProps = (dispatch, props) => ({
+  addColumn: title => dispatch(createActionAddColumn({
+    listId: props.id,
+    title,
+  })),
+});
 
-  export default connect(mapStateToProps, mapDispatchToProps)(List);
+export default connect(mapStateToProps, mapDispatchToProps)(List);
