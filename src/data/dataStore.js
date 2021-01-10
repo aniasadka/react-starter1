@@ -10,8 +10,25 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+
+  header: {
+    icon: 'cat',
+  },
+  
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+};
+
+export const info = {
+  title: 'Info',
+  description: 'INFO: Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png', 
+};
+
+export const faq = {
+  title: 'FAQ',
+  description: 'FAQ: Lorem ipsum dolor sit amet, consectetur adipiscing elit laborum!!!',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
 export const pageContents = {
