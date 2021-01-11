@@ -5,16 +5,18 @@ import Container from '../Container/Container';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 
+
 class Header extends React.Component {
   render(){
     return (
       <header className={styles.component}>
       <Container>
-        <Search />
+     
         <div className={styles.wrapper}>
           <Link className={styles.logo} to='/'>
             <Icon name={settings.header.icon} />
           </Link>
+           
           <nav>
             <NavLink exact to='/' activeClassName='active'>
               Home
@@ -26,6 +28,7 @@ class Header extends React.Component {
               FAQ
             </NavLink>
           </nav>
+        
         </div>
       </Container>
     </header>
