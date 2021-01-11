@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../Container/Container';
 import {faq} from '../../data/dataStore';
-//import Hero from '..Hero/Hero';
+import Hero from '../Hero/Hero';
 import styles from './Faq.scss';
 
 const Faq = () => (
